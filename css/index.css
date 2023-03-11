@@ -14,7 +14,7 @@
     font-family: 'Optima';
     font-style: normal;
     font-weight: normal;
-    src: local('Optima'), url('./fuentes/OPTIMA.woff') format('woff');
+    src: local('Optima'), url('../fuentes/OPTIMA.woff') format('woff');
 }
 
 ::-webkit-scrollbar {
