@@ -226,27 +226,27 @@ header.sticky .header-links:hover {
 
 @keyframes change {
     0% {
-        background-image: url(../imagenes/banner.jpeg);
+        background-image: url(imagenes/banner.jpeg);
     }
 
     20% {
-        background-image: url(../imagenes/banner2.jpg);
+        background-image: url(imagenes/banner2.jpg);
     }
 
     40% {
-        background-image: url(../imagenes/banner3.jpg);
+        background-image: url(imagenes/banner3.jpg);
     }
 
     60% {
-        background-image: url(../imagenes/banner4.jpg);
+        background-image: url(imagenes/banner4.jpg);
     }
 
     80% {
-        background-image: url(../imagenes/banner5.webp);
+        background-image: url(imagenes/banner5.webp);
     }
 
     100% {
-        background-image: url(../imagenes/banner.jpeg);
+        background-image: url(imagenes/banner.jpeg);
     }
 
 }
