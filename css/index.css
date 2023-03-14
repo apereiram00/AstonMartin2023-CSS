@@ -299,18 +299,22 @@ header.sticky .header-links:hover {
 
 /* FOOTER */
 
-.footer-general{
+.footer-general, .policy{
     background-color: #FBFCFC;
-    padding-top: 55px;
+    padding-top: 75px;
     padding-bottom: 35px;
 }
 
-#partners hr{
+.footer-general{
+    text-align: center;
+}
+
+.footer-general hr{
     width: 80%;
     margin: auto;
 }
 
-#partners h1 {
+.footer-general h1 {
     font-size: 120px;
     color: #4A4A4A;
     letter-spacing: 5px;
@@ -326,4 +330,10 @@ header.sticky .header-links:hover {
     padding-top: 5em;
     padding-left: 5em;
 }
+
+#partners{
+    display: flex;
+    justify-content: center;
+}
+
 
