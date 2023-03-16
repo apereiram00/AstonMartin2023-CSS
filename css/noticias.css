@@ -137,9 +137,17 @@ header.sticky .header-links:hover {
     justify-content: center;
 }
 
+.content-table-title{
+    background-color: #00473f;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
 .content-table table {
     padding: 5em;
     font-size: 18px;
+    
 }
 
 .content-table .td-title {
