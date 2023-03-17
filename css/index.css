@@ -73,7 +73,6 @@ header {
 header.sticky {
     padding: 15px 100px;
     backdrop-filter: blur(22.5px);
-    opacity: 1;
 }
 
 header.sticky .header-links {
@@ -182,7 +181,7 @@ header.sticky .header-links:hover {
 .footer-general {
     background-color: #FBFCFC;
     padding-top: 75px;
-    padding-bottom: 35px;
+    padding-bottom: 0;
 }
 
 .footer-general {
@@ -216,6 +215,113 @@ header.sticky .header-links:hover {
     padding-left: 5em;
 }
 
+.policy {
+    margin-top: 7em;
+}
+
+.policy hr {
+    width: 100%;
+    margin: auto;
+}
+
+.policy-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    line-height: 30px;
+}
+
+#policy-1,
+#policy-2,
+#policy-description {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.policy-list li {
+    margin-left: 5em;
+    text-align: left;
+}
+
+.policy-list a {
+    background-image: linear-gradient(to right,
+            #cedc00,
+            #cedc00 50%,
+            #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.policy-list a:before{
+    content: '';
+  background: #323232;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.policy-list a:hover{
+    background-position: 0;
+}
+
+.policy-list a:hover::before{
+    width: 100%;
+  }
+
+.policy-title p,
+.policy-list a,
+.policy-list li {
+    color: #111;
+    font-weight: bolder;
+    list-style: none;
+}
+
+#policy-description {
+    width: 25%;
+    line-height: 30px;
+}
+
+#policy-description p {
+    font-weight: bolder;
+    text-align: justify;
+    color: #111;
+}
+
+#social-media {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5em;
+}
+
+#social-media i{
+    color: #555555;
+    transition: 0.4s ;
+}
+
+#social-media li {
+    display: inline;
+    margin: 1em;
+}
+
+#social-media ul {
+    padding: 1em;
+}
 
 
-
+#social-media i:hover {
+    font-size: 1.5em;
+    transition: 0.4s ;
+}
