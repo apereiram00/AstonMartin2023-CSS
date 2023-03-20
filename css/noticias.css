@@ -57,6 +57,16 @@ header.sticky #logo {
     height: 100%;
 }
 
+.footer-general img {
+    width: 80%;
+}
+
+#clasification-table img{
+    width: 50%;
+    padding: 1em;
+}
+
+
 /* HEADER */
 header {
     position: fixed;
@@ -104,7 +114,6 @@ header ul li {
     font-size: 25px;
 }
 
-
 header.sticky .header-links:hover {
     font-size: 22px;
 }
@@ -144,31 +153,6 @@ header.sticky .header-links:hover {
     justify-content: center;
 }
 
-.table-title h1{
-    color: black;
-    text-align: left;
-    text-transform: uppercase;
-}
-
-.clasification{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.kek:hover{
-    overflow-y: scroll;
-    transition: 5s;
-}
-
-#clasification-table{
-    height: 15em;
-    z-index: -1;
-    position: relative;
-    color: #111;
-}
-
 #week-race-table table {
     padding: 3em;
     font-size: 18px;
@@ -195,8 +179,6 @@ header.sticky .header-links:hover {
 #week-race-table .td-time {
     width: 10em;
 }
-
-
 
 .content2 {
     display: flex;
@@ -242,7 +224,7 @@ header.sticky .header-links:hover {
 .footer-general {
     background-color: #FBFCFC;
     padding-top: 75px;
-    padding-bottom: 35px;
+    padding-bottom: 0;
 }
 
 .footer-general {
@@ -250,7 +232,7 @@ header.sticky .header-links:hover {
 }
 
 .footer-general hr {
-    width: 80%;
+    width: 92%;
     margin: auto;
 }
 
@@ -262,6 +244,11 @@ header.sticky .header-links:hover {
     text-align: center;
 }
 
+#partners {
+    display: flex;
+    justify-content: center;
+}
+
 #partners ul {
     display: flex;
     align-items: center;
@@ -271,7 +258,113 @@ header.sticky .header-links:hover {
     padding-left: 5em;
 }
 
-#partners {
+.policy {
+    margin-top: 7em;
+}
+
+.policy hr {
+    width: 100%;
+    margin: auto;
+}
+
+.policy-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    line-height: 30px;
+}
+
+#policy-1,
+#policy-2,
+#policy-description {
     display: flex;
     justify-content: center;
+    width: 20%;
+}
+
+.policy-list li {
+    margin-left: 5em;
+    text-align: left;
+}
+
+.policy-list a {
+    background-image: linear-gradient(to right,
+            #cedc00,
+            #cedc00 50%,
+            #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.policy-list a:before{
+    content: '';
+  background: #323232;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.policy-list a:hover{
+    background-position: 0;
+}
+
+.policy-list a:hover::before{
+    width: 100%;
+  }
+
+.policy-title p,
+.policy-list a,
+.policy-list li {
+    color: #111;
+    font-weight: bolder;
+    list-style: none;
+}
+
+#policy-description {
+    width: 25%;
+    line-height: 30px;
+}
+
+#policy-description p {
+    font-weight: bolder;
+    text-align: justify;
+    color: #111;
+}
+
+#social-media {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5em;
+}
+
+#social-media i{
+    color: #555555;
+    transition: 0.4s ;
+}
+
+#social-media li {
+    display: inline;
+    margin: 1em;
+}
+
+#social-media ul {
+    padding: 1em;
+}
+
+
+#social-media i:hover {
+    font-size: 1.5em;
+    transition: 0.4s ;
 }
